@@ -83,7 +83,7 @@ const Skills = () => {
           {skills?.map((skill, i) => (
             <div
               key={i}
-              className="border-2 group border-cyan-600 relative min-w-[10rem] max-w-[16rem] bg-gray-900 p-10 rounded-xl"
+              className="border-2 group border-cyan-600 relative min-w-[10rem] max-w-[16rem] bg-gray-900 p-10 rounded-xl hover:bg-gray-900 shadow-lg shadow-blue-500/50"
             >
               <div
                 style={{

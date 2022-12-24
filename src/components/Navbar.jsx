@@ -21,31 +21,30 @@ const Navbar = () => {
   }, []);
   return (
     <nav
-      className={`fixed w-full left-0 top-0 z-[999] ${
+      className={`fixed w-full left-0 top-0 z-[999] backdrop-blur ${
         sticky ? "bg-white/60  text-gray-900" : "text-white"
       }`}
     >
       <div className="flex items-center justify-between">
         <div className="mx-7">
           <img src={logo2} className="w-1/5" />
-          {/* <h4 className="text-4xl uppercase font-bold">
-            A<span className="text-cyan-600">le</span>x
-          </h4> */}
+         
         </div>
         <div
-          className={` ${
+          className={`  ${
             sticky ? "md:bg-white/0 bg-white" : "bg-white"
           } text-gray-900 md:block hidden px-7 py-2 font-medium  rounded-bl-full`}
         >
           <ul className="flex items-center gap-1 py-2 text-lg">
             {menuLinks?.map((menu, i) => (
-              <li key={i} >
-                <a className="px-6 hover:opacity: .2;
-              filter: blur(2px)" href={menu?.link}>{menu?.name}</a>
+              <li key={i}>
+                <a className="px-6 hover:text-gray-600" href={menu?.link}>{menu?.name}</a>
               </li>
             ))}
           </ul>
         </div>
+        {/*hover: opacity-100 blur-none */}
+        {/*hover: opacity-20 blur-[2px] */}
         <div
           onClick={() => setOpen(!open)}
           className={`z-[999]  ${
@@ -66,9 +65,8 @@ const Navbar = () => {
               <li
                 onClick={() => setOpen(false)}
                 key={i}
-                className="border-green-900"
               >
-                <a   className="border-red-900" href={menu?.link}>{menu?.name}</a>
+                <a href={menu?.link}>{menu?.name}</a>
               </li>
             ))}
           </ul>
