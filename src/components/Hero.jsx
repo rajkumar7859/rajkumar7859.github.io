@@ -15,7 +15,7 @@ const Hero = () => {
     <section id="home" className="min-h-screen flex py-10 md:flex-row flex-col items-center">
 <ScrollAnimation animateIn="fadeInLeft"   >
       <div className="flex-1 flex items-center justify-center h-full">
-        <img src={hero} alt="" className="md:w-11/12 h-full object-cover" />
+        <img src={hero} alt="" className="md:w-11/12 h-full object-cover " />
       </div>
 </ScrollAnimation>
       <div className="flex-1">
