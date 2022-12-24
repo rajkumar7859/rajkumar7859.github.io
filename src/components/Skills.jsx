@@ -2,6 +2,7 @@ import React from "react";
 import { SiRedux ,SiCss3 ,SiNodedotjs ,SiJavascript ,SiReact ,SiExpress ,SiChakraui ,SiTailwindcss, SiPostman, SiMongodb } from "react-icons/si"
 import { FaHtml5 } from "react-icons/fa"
 import { TbBrandNextjs } from "react-icons/tb"
+import ScrollAnimation from "react-animate-on-scroll";
 
 const Skills = () => {
   const skills = [
@@ -68,11 +69,16 @@ const Skills = () => {
   ];
   return (
     <section id="skills" className="py-10 bg-gray-800 relative">
+
       <div className="mt-8 text-gray-100 text-center">
+      <ScrollAnimation animateIn="fadeInUp" >
         <h3 className="text-4xl font-semibold">
           My <span className="text-cyan-600">Skills</span>
         </h3>
         <p className="text-gray-400 mt-3 text-lg">My knowledge</p>
+          </ScrollAnimation>
+
+          <ScrollAnimation animateIn="fadeInUp" delay={0.2*1000} >
         <div className="flex items-center justify-center mt-12 gap-10 flex-wrap">
           {skills?.map((skill, i) => (
             <div
@@ -93,6 +99,7 @@ const Skills = () => {
             </div>
           ))}
         </div>
+        </ScrollAnimation>
       </div>
     </section>
   );

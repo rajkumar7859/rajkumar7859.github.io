@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import logo2 from "../assets/images/logo2.png"
+import { HiMenuAlt3 } from "react-icons/hi"
+import { RxCross1 } from "react-icons/rx"
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
@@ -50,7 +52,7 @@ const Navbar = () => {
             open ? "text-gray-900" : "text-gray-100"
           } text-3xl md:hidden m-5`}
         >
-          <ion-icon name="menu"></ion-icon>
+         {!open? <HiMenuAlt3 name="menu"  />:<RxCross1 />} 
         </div>
         <div
           className={`md:hidden text-gray-900 absolute w-2/3 h-screen
@@ -58,16 +60,15 @@ const Navbar = () => {
         open ? "right-0" : "right-[-100%]"
       }`}
         >
+      
           <ul className="flex flex-col justify-center h-full gap-10 py-2 text-lg">
             {menuLinks?.map((menu, i) => (
               <li
                 onClick={() => setOpen(false)}
                 key={i}
-                className="px-6 hover: opacity: 1;
-                filter:blur(0px);"
+                className="border-green-900"
               >
-                <a   className=" hover: opacity: 1;
-                filter:blur(0px);" href={menu?.link}>{menu?.name}</a>
+                <a   className="border-red-900" href={menu?.link}>{menu?.name}</a>
               </li>
             ))}
           </ul>
