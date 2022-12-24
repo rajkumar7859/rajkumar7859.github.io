@@ -34,10 +34,12 @@ const Hero = () => {
             <Textloop />
           </h3>
 </ScrollAnimation>
-<ScrollAnimation animateIn="fadeInUp" delay={0.4*1000}>
-          <button className="btn-primary mt-8">Contact Me</button>
+<ScrollAnimation animateIn="fadeInUp" delay={0.3*1000}>
+  <a href="./src/assets/Rajkumar_Vishwakarma_Resume.pdf" download>
+          <button className="btn-primary mt-8">Download CV</button>
+  </a>
 </ScrollAnimation>
-<ScrollAnimation animateIn="fadeInUp" delay={0.6*1000} >
+<ScrollAnimation animateIn="fadeInUp" delay={0.5*1000} >
           <div className="mt-8 text-3xl flex items-center md:justify-start justify-center gap-5">
             {social_media?.map((icon) => (
               <div
