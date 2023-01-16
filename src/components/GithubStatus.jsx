@@ -1,5 +1,4 @@
 import React from "react";
-// import hireMe from "../assets/images/hireMe.png";
 import GitHubCalendar from "react-github-calendar";
 // import {ReactTooltip} from "react-tooltip";
 import { BsGithub } from "react-icons/bs";
@@ -80,7 +79,6 @@ const  GithubStatus= () => {
                 showWeekdayLabels={"true"}
                 blockRadius={2}
                 username="rajkumar7859" 
-                transformData={selectLastHalfYear}
                 blockSize={20} 
                 fontSize={16} 
                 >
