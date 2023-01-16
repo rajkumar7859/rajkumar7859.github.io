@@ -95,7 +95,7 @@ const Contact = () => {
         </div>
             </ScrollAnimation>
       </div>
-      <ToastContainer position="top-center" autoClose={10000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover theme="light" />
+      <ToastContainer  position="top-center" autoClose={10000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover theme="light" />
     </section>
   );
 };

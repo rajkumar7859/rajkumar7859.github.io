@@ -67,7 +67,7 @@ const  GithubStatus= () => {
             <br />
             <ScrollAnimation animateIn="fadeInUp" delay={0.3*1000} >
 
-            <div className="w-[90%] border-2 flex-col justify-center items-center text-center sm:block hidden border-white rounded-md p-4 bg-[#112038]">
+            <div className=" border-2 flex-col justify-center items-center text-center sm:block  border-white rounded-md p-4 bg-[#112038]">
               <div className="flex justify-between">
               <BiTargetLock size={20} className='animate-spin-slow'></BiTargetLock>
                 <h2 className="capitalize font-bold text-2xl text-purple-400 ">My contributions In GitHub </h2>
