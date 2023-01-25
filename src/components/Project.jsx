@@ -18,7 +18,7 @@ const Project = () => {
       name: "Tata 1mg ",
       description:"It’s a indivisible project where I have show my creativity along with frontend and backend integration its Fully Responsive booking web application that allows you to book medicine and health related thing. In this website you can filter, sort hotels by price, rating and reviews.",
       github_link: "https://github.com/Sridhar-C-25",
-      live_link: "https://myreactflix.netlify.app",
+      live_link: "https://tata-1mg-clone-project.vercel.app/",
     },
     {
       img: tripBook,
@@ -84,14 +84,12 @@ const Project = () => {
                     <a
                       href={project_info.github_link}
                       target="_blank"
-                      // className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
                       >
                       GitHub <BsGithub className="inline mb-2 ml-2 text-[1.5rem] animate-bounce text-blue-400"></BsGithub>
                     </a>
                     <a
                       href={project_info.live_link}
                       target="_blank"
-                      // className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
                       >
                       Live <TiDocumentText  className="inline mb-2 ml-2 text-[1.5rem] animate-bounce text-blue-400" />
                     </a>
