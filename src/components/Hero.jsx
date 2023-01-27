@@ -35,7 +35,7 @@ const Hero = () => {
           </h3>
 </ScrollAnimation>
 <ScrollAnimation animateIn="fadeInUp" delay={0.3*1000}>
-  <a href="./src/assets/Rajkumar_Vishwakarma_Resume.pdf" download>
+  <a href="./src/assets/Rajkumar_Vishwakarma_Resume.pdf" download="Rajkumar_Vishwakarma_Resume.pdf">
           <button className="btn-primary mt-8">Download CV</button>
   </a>
 </ScrollAnimation>
