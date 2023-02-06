@@ -62,7 +62,7 @@ technology solutions.
               <br />
               <br />
               <ScrollAnimation animateIn="fadeInLeft" delay={0.3*1000} >
-              <a href="./src/assets/Rajkumar_Vishwakarma_Resume.pdf" download>
+              <a target="_blank" href="https://drive.google.com/file/d/1DOW-990HrV3-6if9hzDT7M5aNI8diMdf/view?usp=sharing">
                 <button className="btn-primary">Download CV</button>
               </a>
               </ScrollAnimation>

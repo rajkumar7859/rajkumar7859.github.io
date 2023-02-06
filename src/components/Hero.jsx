@@ -35,9 +35,10 @@ const Hero = () => {
           </h3>
 </ScrollAnimation>
 <ScrollAnimation animateIn="fadeInUp" delay={0.3*1000}>
-  <a href="./src/assets/Rajkumar_Vishwakarma_Resume.pdf" download="Rajkumar_Vishwakarma_Resume.pdf">
+  <a target="_blank" href="https://drive.google.com/file/d/1DOW-990HrV3-6if9hzDT7M5aNI8diMdf/view?usp=sharing" >
           <button className="btn-primary mt-8">Download CV</button>
   </a>
+
 </ScrollAnimation>
 <ScrollAnimation animateIn="fadeInUp" delay={0.5*1000} >
           <div className="mt-8 text-3xl flex items-center md:justify-start justify-center gap-5">
